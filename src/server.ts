@@ -18,10 +18,9 @@ app.use((req, res, next) => {
 	next();
 });
 
-app.get("/admin", async (req, res) => {
-	res.render("admin", {
-		message: "ding dong",
-	});
+// App pages
+app.get("/", (req, res) => {
+	res.render("home", { header: "hello, world" });
 });
 
 app.listen(3000, () => console.log("Server running on port 3000"));

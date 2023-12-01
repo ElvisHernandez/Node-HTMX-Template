@@ -1,9 +1,17 @@
 /* eslint-disable no-undef */
 /** @type {import('tailwindcss').Config} */
 module.exports = {
-	content: ["./src/**/*.{hbs}"],
+	content: ["./src/**/*.hbs"],
 	theme: {
-		extend: {},
+		extend: {
+			fontFamily: {
+				poppins: ["Poppins", "sans-serif"],
+				yellowtail: ["Yellowtail", "cursive"],
+			},
+		},
 	},
 	plugins: [require("daisyui")],
+	daisyui: {
+		themes: ["dracula"],
+	},
 };
