@@ -3,4 +3,4 @@ dist
 static/*
 !static/
 !static/.gitkeep
-*.sqlite
+*.sqlite*

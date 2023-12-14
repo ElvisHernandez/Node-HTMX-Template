@@ -8,7 +8,7 @@ export class Db {
 
 	private constructor() {
 		this.dbPromise = open({
-			filename: path.resolve(__dirname, "../../db/db.sqlite"),
+			filename: path.resolve(__dirname, "../../db/db.sqlite3"),
 			driver: sqlite3.Database,
 		});
 	}
